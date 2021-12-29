@@ -13,6 +13,10 @@ app.use(cors());
 // Parsing body requests using body-parser middleware package
 app.use(bodyParser.json());
 
+// Mounting apiRouter at /api path
+const apiRouter = require('./server/api');
+app.use('/api', apiRouter);
+
 if (!module.present) {
   app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
