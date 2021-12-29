@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Mounting apiRouter at /api path
-const apiRouter = require('./server/api');
+const apiRouter = require('./api/api');
 app.use('/api', apiRouter);
 
 if (!module.present) {
