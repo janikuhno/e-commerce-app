@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce-app",
+  "version": "1.0.0",
+  "description": "A fullstack app for basic e-commerce esque functionality",
+  "main": "server.js",
+  "scripts": {
+    "test": "cross-env PORT=8000 mocha --watch"
+  },
+  "author": "Jani Kuhno",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.1",
+    "chai": "^4.3.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.2",
+    "mocha": "^9.1.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  }
+}
